@@ -25,10 +25,23 @@ def IV(): #i-re végződik
     print(lista0)
 
 
+def ABC():
+    Nlista.sort()
+    print(Nlista)
+
+
+def WL(): #write list
+    with open("kuytusok_nagy,txt", "w", encoding="utf-8") as f:
+        for i in Nlista:
+            f.write(f"{i}\n")
+
+
 def main():
     beolvas()
     NB()
     IV()
+    ABC()
+    WL()
 
 
 main()
